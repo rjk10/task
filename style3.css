@@ -72,7 +72,7 @@ section {
   background-size: 100% 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
+  overflow: hidden; 
   
 }
 
@@ -148,6 +148,7 @@ span {
   .hero .hero-info .hero-info-subheading {
     letter-spacing: 0.7rem;
   }
+    
 }
 
 @media (min-width: 1200px) {
@@ -182,6 +183,7 @@ span {
   color: #fff;
   line-height: 1.5;
   letter-spacing: 1px;
+    overflow: hidden;
 }
 .about-details {
   padding: 30px 100px;
@@ -228,6 +230,7 @@ span {
   color: #fff;
   line-height: 1.5;
   letter-spacing: 1px;
+
 }
 .contact-details {
   padding: 30px 100px;
@@ -256,7 +259,7 @@ span {
     
     align-items: center;
   }
- }
+}
 .icons {
   display: flex;
   list-style: none;
@@ -278,4 +281,98 @@ span {
   cursor: pointer;
   display: block;
 }
+.footer-bottom {
+    width: 1200px;
+    max-width: 98%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+.copyright p {
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    display: block;
+}
+
+.social-icons i {    
+    font-size: 30px;
+    color: #002966;
+    padding: 0 15px;
+}
+
+.social-icons .fa-facebook {
+    padding: 0 15px 0 0;
+}
+
+.social-icons i:hover {
+    color: #4d94ff;
+    transition: 0.3s;
+}
+
+
+.empty-space {    
+    min-height: 800px;
+}
+@media (max-width: 500px) {
+    .footer { 
+        padding-top: 20px;
+        width: 100%;
+        align-items: center;
+        text-align: center;        
+        grid-template-columns: repeat(1, 1fr);
+         position:fixed; 
+    }    
+    
+   
+    .footer-bottom {
+        display: block;
+        text-align: center;
+    }
+    
+    .social-icons {
+        margin: 10px 0;
+    }
+    .copyright {
+        margin-bottom: 20px;
+    }
+  }
+   .project {
+    min-height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  url('background3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 1px;
+
+}
+.project-details {
+  padding: 30px 100px;
+}
+.project-details h1 {
+  font-size: 50px;
+  font-family: 800;
+  text-transform: uppercase;
+}
+
+.pj {
+color:#a6a6a6;
+
+  font-size: 35px;
+ 
+}
+
+
+
 
